@@ -1,0 +1,500 @@
+/*
+Feuille de css pour site yoga
+*/
+/* 
+    Created on : 7 nov. 2018, 15:31:23
+    Author     : Pascal Fromentin
+*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Voltaire', sans-serif;
+    color: #9d8390;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    top: 1rem;
+    left: 1rem;
+    z-index: 1;
+    padding-right: 2rem;
+    padding-left: 2rem;
+}
+header nav {
+    right: 2rem;
+}
+header a, footer a {
+    color: #fff;
+    text-decoration: none;
+    padding: 0.5rem;
+    font-size: 20px;
+}
+header a {
+    padding-right: 2rem;
+}
+header a:hover {
+    color: #d75a4a;
+}
+.header_scroll {
+    background-color: #c4fcca;
+}
+h1 {
+    display: block;
+    width: 20%;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+h1, h2, h3, h4, h5, h6, .title {
+    text-transform: uppercase;
+    padding: 2rem;
+}
+.h3 {
+    padding: 0.5rem;
+}
+p {
+    color: #807981;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1rem;
+}
+footer {
+    color: #fff;
+    font-family: 'Voltaire', sans-serif;
+    font-size: 1.5rem;
+    background-image: url('../img/pattern-lotus.png');
+    max-width: 100%;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+footer a, footer p {
+    font-size: 1rem;
+    font-family: 'Voltaire', sans-serif;
+    text-decoration: none;
+}
+.active {
+    display: block;
+}
+.inactive {
+    display: none;
+}
+.p {
+    padding: 1rem;
+}
+.bold {
+    font-weight: bold;
+}
+.color-white-fff {
+    color: #fff;
+}
+.color-gris-ede4e5 {
+    color: #ede4e5;
+}
+.upper {
+    text-transform: uppercase;
+}
+.title {
+    font-size: 1.5rem;
+    font-family: 'Open Sans', sans-serif;
+}
+ul {
+    display: none;
+}
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+.main-nav {
+    padding: 0.5rem;
+}
+.color-orange-d75a4a {
+    color: #d75a4a;
+}
+          /* Menu */
+
+.li {
+    list-style-type: none;
+}
+a:hover {
+    color: orangered;
+}          
+          /* Image */
+          
+.img-responsive {
+    width: 100%;
+    height: auto;
+    padding: 1rem;
+}
+.align-self-start {
+    align-self: flex-start;
+}
+
+          /* Boutons */
+.cta {
+    border: solid 1px;
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: bold;
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 1rem;
+    font-size: 30px;
+}
+
+          /* Slider */
+.slider {
+    position: relative;       
+}
+.btn-slider {
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.bg-btn-slider {
+    width: 12px;
+    height: 12px;
+    background-position: -0 -0;
+    padding: 0;
+}
+.bulletactive {
+    width: 12px;
+    height: 12px;
+    background-position: -0 -12px;
+    padding: 0;
+}
+.lotus {
+    bottom: 1.7rem;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 35%;
+}
+.btn-cours {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.5rem;
+    display: block;
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+    border: solid 1px #9d8390;
+    color: #9d8390;
+    font-size: 24px;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 0.5rem;
+    margin-top: 1rem;
+    margin-bottom: 3rem;
+}
+.btn-cours:hover {
+    border-color: #d75a4a;
+}
+
+          /* Présentatation */
+.bg-color {
+    color: #f2eced;
+}
+.bg-pattern-lotus {
+    background-color: #f2eced;
+    background-image: url('../img/pattern-lotus.png');
+    max-width: 100%;
+    margin-left: 1rem;
+    margin-right: 1rem;   
+}
+.bg-color-gris {
+    background-color: #7a757a
+    }
+.btn {
+    border: solid 1px #9d8390;
+    color: #9d8390;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: bold;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    font-size: 30px;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+.map {
+    padding: 1rem;
+}
+
+          /* Abonnements */
+          
+.prix {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-size: 3.75rem;
+  color: #fff;
+  transform: translate(-50%,-50%);
+}
+
+.abonnement:hover {
+    color: #d75a4a;
+}
+          /* Positionnement */
+          
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+.justify-between {
+    justify-content: space-between;
+}
+.justify-around {
+    justify-content: space-around;
+}
+.justify-center {
+    justify-content: center;
+}
+.align-center {
+    align-items: center;
+}
+.relative {
+    position: relative;
+}
+.absolute {
+    position: absolute;
+}
+.text-center {
+    text-align: center;
+}
+.text-justify {
+    text-align: justify;
+}
+.text-left {
+    text-align: left;
+}
+.padding {
+    padding: 2rem;
+}
+.padding-top-1rem {
+    padding-top: 1rem;
+}
+.padding-bottom-2rem {
+    padding-bottom: 2rem;
+}
+.padding-bottom-4rem {
+    padding-bottom: 4rem;
+}
+.padding-left-4rem {
+    padding-left: 4rem;
+}
+.padding-right-4rem {
+    padding-right: 4rem;
+}
+.margin-l-auto {
+    margin-left: auto;
+}
+.margin-r-auto {
+    margin-right: auto;
+}
+          /* Largeurs */
+
+.full-width {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.width-1200 {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.width-1024 {
+    max-width: 1024px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.width-800 {
+    max-width: 1024px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.large-12 {
+    width: 100%;
+}
+.large-10 {
+    width: 85%;
+}
+.large-8 {
+    width: 75%;
+}
+.large-7 {
+    width: 60%;
+}
+.large-6 {
+    width: 50%;
+}
+.large-5 {
+    width: 40%;
+}
+.large-4 {
+    width: 25%;
+}
+.large-3 {
+    width: 24%;
+}
+.large-2 {
+    width: 16%;
+}
+.large-1 {
+    width: 8%;
+}
+          /* sprite */
+.sprite {
+    background-image: url('../img/sprites.png');
+    display: block;
+}
+.bg-picto-facebook {
+    width: 44px;
+    height: 44px;
+    background-position: -0 -152px;
+}
+.bg-picto-facebook:hover {
+    width: 32px;
+    height: 32px;
+    background-position: -0 -24px;
+}
+.bg-picto-twitter {
+    width: 44px;
+    height: 44px;
+    background-position: -0 -196px;
+}
+.bg-picto-twitter:hover {
+    width: 32px;
+    height: 32px;
+    background-position: -0 -120px;
+}
+.bg-btn-retour-haut {
+    width: 78px;
+    height: 78px;
+    background-position: -0 -240px;
+    position: fixed;
+
+    bottom: 5%;
+    right: 5%;
+    
+}
+.bg-lotus-gris {
+    width: 288px;
+    height: 230px;
+    background-position: -0 -397px;
+}
+.bg-lotus-orange {
+    width: 288px;
+    height: 230px;
+    background-position: -0 -627px;
+}
+.bg-menu {
+    width: 32px;
+    height: 32px;
+    background-position: -0 -56px;
+}
+.bg-menu:over {
+    width: 32px;
+    height: 32px;
+    background-position: -0 -88px;
+}
+
+home:hover {
+    background-image: url('../img/home-hover.png');
+    width: 24px;
+    height: 24px;
+}
+
+.sprite2 {
+    background-image: url('../img/css_sprites2.png');
+    display: block;
+}
+.bg-left_arrow {
+    width: 32px;
+    height: 32px;
+    background-position: -10px -10px;
+    top: 50%;
+    left: 2%;
+    transform: translateY(-50%);
+}
+.bg-right_arrow {
+    width: 32px;
+    height: 32px;
+    background-position: -62px -10px;
+    top: 50%;
+    right: 2%;
+    transform: translateY(-50%);
+}
+
+/* Affichage responsive pour tablettes */
+@media all and (min-width:416px) {
+    .hide-for-large {
+        display: none;
+    }
+}
+/* Affichage responsive pour smartphones */
+@media all and (max-width:415px) {
+    .hide-for-small {
+        display: none;
+    }
+    header {
+        background-color: #d75a4a;
+        text-align: center;
+        position: static;
+    }
+    .align-center {
+        align-items: center;
+    }
+    .bg-menu {
+    width: 32px;
+    height: 32px;
+    background-position: -0 -56px;
+    margin: auto;
+    justify-content: center;
+    background-repeat: no-repeat;
+    justify-content: center;
+}
+    /*.bg-menu:hover {
+    width: 32px;
+    height: 32px;
+    background-position: -0 -88px;
+    margin: auto;
+    justify-content: center;
+    background-repeat: no-repeat;
+    justify-content: center;
+}*/
+    .small-full-width {
+        width: 100%;
+
+    }
+    .no-row {
+        flex-wrap: nowrap;
+        display: block;
+        text-align: center;
+        padding: 0;
+    }
+    .cta-small {
+    background-color: #807981;
+    border: solid 1px;
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 1rem;
+    font-size: 30px;
+    display: block;
+}
+h {
+    padding: 0;
+}
+p {
+    align-items: center;
+}
+footer nav {
+    justify-content: space-between;
+}
+}
